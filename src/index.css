@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Science-inspired color palette */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Deep research blue */
+    --primary: 212 84% 32%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 212 84% 28%;
+
+    /* Research green accent */
+    --secondary: 158 64% 52%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 158 64% 48%;
+
+    /* Subtle background tones */
+    --muted: 210 40% 98%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 205 100% 96%;
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 212 84% 32%;
+
+    /* Custom design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(212 84% 32%), hsl(158 64% 52%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(205 100% 96%));
+    --shadow-research: 0 4px 24px -2px hsl(212 84% 32% / 0.12);
+    --shadow-card: 0 2px 16px -4px hsl(215 25% 15% / 0.08);
+    
+    /* Typography scale */
+    --font-size-hero: 3.5rem;
+    --font-size-section: 2.25rem;
+    --font-size-card: 1.125rem;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 158 64% 52%;
+    --primary-foreground: 215 25% 8%;
+    --primary-hover: 158 64% 56%;
+
+    --secondary: 212 84% 45%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 212 84% 49%;
+
+    --muted: 215 25% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 215 25% 14%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 25% 15%;
+    --input: 215 25% 15%;
+    --ring: 158 64% 52%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(158 64% 52%), hsl(212 84% 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(215 25% 8%), hsl(215 25% 12%));
+    --shadow-research: 0 4px 24px -2px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 2px 16px -4px hsl(0 0% 0% / 0.2);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

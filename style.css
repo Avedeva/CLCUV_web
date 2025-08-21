@@ -1,0 +1,47 @@
+*{background-color: black;
+    margin: 20px;
+    padding: 0px;
+    font-family: cursive;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    justify-items: center;
+    align-content: center;
+}
+
+.container{justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(251, 251, 251);
+    
+   
+    align-content: center;
+    justify-items: center;
+
+}
+
+.box{
+
+    text-align: center;
+    align-content: center;
+    width: 100px;
+    height: 100px;
+  
+animation: anim 10s ease-in-out 2s infinite ;
+}
+
+
+@keyframes anim{
+from{background-color: white;
+    color: rgb(255, 254, 254);
+    
+    transform: rotate(270deg) translate(100px);
+}
+to{background-color: rgb(0, 0, 0);
+    color: pink;
+    transform: rotate(0deg);
+}
+
+}
